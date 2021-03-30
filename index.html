@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<!-- head: contains instructions for the website detailing which charset to use, what width to use, the website title, the normalize.css file, and my CSS file. -->
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Adriene Smith | Portfolio</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- Body: contains the visual content for the web page -->
+<body>
+  
+	<!-- Header: contains the page title and navigation -->
+	<header>
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About Me</a></li>
+				<li><a href="#portfolio">Portfolio</a></li>
+				<li><a href="#contact">Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Main: contains home, about me, portfolio, & contact info -->
+	<main>
+
+		<!-- Home section -->
+		<section id="home">
+			<div class="group">
+				<div class="item">
+					<img src="/images/adriene.jpg" alt="adriene">
+          </div>
+          <div class="item-double">
+            <h1>Adriene Smith</h1>
+            <p>Greetings! My name is Adriene, and I'm a software engineering student at Thinkful. I currently live, study, work, and thrive in Seattle, WA.</p>
+            <p>I use HTML, CSS, and JavaScript daily at both school and at work. I'm having a blast learning how these languages interact to create and sustain the world around us.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me section -->
+      <section id="about" class="dark-background">
+        <div class="group">
+          <div class="item-double">
+            <h2>Who Am I?</h2>
+            <p>In my current role as a digital prepress technician, I develop workflows that automate file preparation for mass-marketing print production. I've worked on my current team for 5 years, and enjoy collaborating on the development of programs that streamline the prepress process.</p>
+            <p>In January 2021, I embarked on a journey to take the knowledge I've learned in my current career, add in an education at Thinkful, and move forward into the tech industry. My compass is pointed towards a role as either a full-stack or back-end developer. There's so many gears spinning beneath the hood, and I want to be on a team that develops new and exciting ways to keep them running smoothly.</p>
+            <p>When I'm off the clock, there's a good chance you'll find me on a hiking trail. I've lived in the Pacific Northwest for my entire life, and I love spending time in the beautiful wilderness that surrounds the city I call home.</p>
+          </div>
+          <div class="item">
+            <img src="/images/hiking.jpg" alt="hiking">
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio section -->
+      <section id="portfolio">
+        <div class="group">  
+          <div class="item">
+            <h2> What have I made?</h2>
+            <div class="group">
+              <div class="item">
+                <h3>Placeholder App #1</h3>
+                <p>Placeholder description for App #1. This is a short description of why I developed App #1, what languages I used to build it, and what the functionality is.</p>
+                <p>Placeholder link to App #1:<br>--insert link here--</p>
+                <p>Placeholder link to repo for App #1:<br>--insert link here--</p>
+                <img src="/images/placeholder-screenshot.png" alt="adriene">
+              </div>
+              <div class="item">
+                <h3>Placeholder App #2</h3>
+                <p>Placeholder description for App #2. This is a short description of why I developed App #2, what languages I used to build it, and what the functionality is.</p>
+                <p>Placeholder link to App #2:<br>--insert link here--</p>
+                <p>Placeholder link to repo for App #2:<br>--insert link here--</p>
+                <img src="/images/placeholder-screenshot.png" alt="placeholder">
+              </div>  
+            </div>  
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact" class="dark-background">
+        <div class="group">
+          <div class="item">
+            <h2>Let's get in touch!</h2>
+            <div class="group">
+              <div class="item-double">
+                <h3>Here's where you can find me:</h3>
+                <div class="group-horiz">
+                  <div class="item-dark">
+                    <a href="mailto:adriene.e.smith@gmail.com">Email</a>
+                  </div>
+                  <div class="item-dark">
+                    <a href="https://github.com/adrienesmith" target="_blank">GitHub</a>
+                  </div>
+                  <div class="item-dark">
+                    <a href="https://linkedin.com/in/adriene-smith" target="_blank">LinkedIn</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="group">   
+              <div class="item">
+                <form action="https://formspree.io/f/xpzkanea" method="post">
+                  <fieldset>
+                      <legend>
+                          Drop me a line!
+                      </legend>
+                      <div>
+                          <label for="name">Your name:</label>
+                          <input id="name" type="text" name="name" />
+                      </div>
+                      <div>
+                          <label for="email">Your Email:</label>
+                          <input id="email" type="text" name="email" />
+                      </div>
+                      <div>
+                          <label for="message">Message:</label>
+                          <textarea id="message" name="message"></textarea>
+                      </div>
+                      <div>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                      </div>
+                  </fieldset>
+                </form>
+              </div>
+              <div class="item">
+                <img src="/images/seattle.jpg" alt="seattle">
+              </div>
+            </div>
+          </div>  
+        </div>
+      </section>
+    </main>      
+    <script src="script.js"></script>
+  </body>
+
+  <footer>
+    <p>&copy; 2021 Adriene Smith</p>
+  </footer>
+</html>

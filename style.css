@@ -1,0 +1,211 @@
+/* general layout */
+
+body,
+group {
+  background-color: ghostwhite;
+}
+
+.group, 
+.group-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
+
+.group-horiz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0;
+}
+
+.item,
+.item-green {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-dark {
+  background-color: #000;
+  padding: 10px;
+  margin: 0 10px;
+}
+
+.item-double {
+  flex: 2;
+  margin: 10px;
+}
+
+img{
+  border-radius: 50%;
+  width: 100%;
+}
+
+/* header & navigation */
+
+header {
+  display: flex;
+  background-color: darkolivegreen;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+
+header nav ul{
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  margin: 0 30px 0 0;
+}
+
+
+header nav ul li:last-child a{
+  margin-right: 0;
+}
+
+/* section */
+
+section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+section.dark-background {
+  margin-bottom: 20px;
+  background-color: darkgray; 
+}
+
+/* form */
+
+fieldset{
+	margin: 10px ;
+  border: 2;
+}
+
+legend,
+button {
+  background-color: #000;
+  color: ghostwhite;
+  padding: 10px 15px;
+  border: 0;
+}
+
+form textarea {
+  height: 4rem;
+  margin-bottom: 15px;
+}
+
+form input[type="text"] {
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form textarea {
+  width: 100%;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* type styles */
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header nav ul li a,
+a {
+  color: ghostwhite;
+}
+
+
+h1,
+h2,
+h3,
+p,
+a {
+  text-align: center;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1,
+h2 {
+  color: #000;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+footer p {
+  text-align: center;
+}
+
+
+
+
+/* desktop */
+
+@media all and (min-width: 600px) {
+
+  /* general layout */
+
+  .group {
+  display: flex;
+  flex-direction: row;
+  }
+
+  header nav ul li a {
+  margin: 0 60px 0 0;
+  }
+
+  .item {
+  flex: 1;
+  margin: 20px;
+  }
+
+  .item-double {
+  flex: 2;
+  margin: 20px;
+  padding: 0 50px;
+  }
+
+  
+  /* type styles */
+
+  p {
+    text-align: left;
+  }
+
+  header nav ul li a:hover,
+  a:hover,
+  button:hover {
+    color: goldenrod;
+  }
+
+}
+
